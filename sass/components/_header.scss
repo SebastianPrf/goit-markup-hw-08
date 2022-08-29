@@ -1,0 +1,65 @@
+.header {
+    .container {
+        padding: 24px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ffffff;
+        border-bottom: 1px solid #ececec;
+        max-height: 80px;
+    }
+    &__logomenu {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        font-family: 'Raleway';
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 31px;
+        text-decoration: none;
+        letter-spacing: 0.03em;
+        color: $black;
+    }
+    &__web {
+        color: $blue;
+    }
+    &__menu {
+        width: 254px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 0 0 93px;
+    }
+    &__item {
+        margin: 0;
+        position: relative;
+    }
+    &__active::after {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        bottom: -32px;
+        height: 4px;
+        border: 2px solid #2196F3;
+        border-radius: 2px;
+    }
+    &__contacts {
+        display: flex;
+        margin-right: 27px;
+    }
+    &__contact {
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+        fill: $lightgrey;
+        &:hover {
+            color: $blue;
+            fill: $blue;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+    
+}

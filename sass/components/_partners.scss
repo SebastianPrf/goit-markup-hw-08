@@ -1,0 +1,26 @@
+.partners {
+    &__partner {
+    width: 170px;
+    height: 76px;
+    border: 1px solid $social_grey;
+    fill: $social_grey;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        border-color: $blue;
+        fill: $blue;
+        cursor: pointer;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+    &__logobox {
+    width: 106px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}

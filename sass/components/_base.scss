@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    font-family: 'Roboto', 'Times New Roman', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    color: $grey;
+    line-height: 1.7;
+    list-style: none;
+    letter-spacing: 0.03em;
+    margin: 0;
+}
+img {
+    display: block;
+}
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    display: block;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: $grey;
+    text-decoration: none;
+    box-sizing: border-box;
+    &:hover {
+        color: #2196F3;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+h1 {
+    font-size: 44px;
+    text-transform: uppercase;
+    line-height: 1.4;
+    width: 696px;
+    height: 120px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $white;
+    margin: auto;
+}
+button {
+    display: block;
+    &:hover,
+    &:focus {
+    color: $white;
+    background-color: $blue;
+    cursor: pointer;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+li {
+    margin: 0 15px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+section {
+    padding: 94px 0;
+}
+section ul {
+    display: flex;
+}
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 42px;
+    margin: 0 0 50px;
+}
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
+    margin: 30px 0 10px;
+}
+h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 16px;
+    margin: 30px 0 10px;
+    width: 270px;
+}
+p {
+    color: $lightgrey;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 400;
+    line-height: 19px;
+    margin: 0 0 16px;
+}
+.socialmedia {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 206px;
+    height: 44px;
+    margin-bottom: 30px;
+    &__type {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+        margin-right: 10px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        fill: $social_grey;
+        &--footer {
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: auto;
+        }
+        &:hover {
+            background-color: $blue;
+            fill: $white;
+            cursor: pointer;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        } 
+    }
+    &__icon {
+        width: 20px;
+        height: 20px;
+    }
+}

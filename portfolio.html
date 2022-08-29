@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>WebStudio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__logomenu">
+                <a class="header__logo" href="index.html"><span class="header__web">Web</span>Studio</a>
+                <nav>
+                    <ul class="header__menu">
+                        <li class="header__item"><a href="index.html">Agencja </a>
+                        </li>
+                        <li class="header__item header__active"><a href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="header__item"><a href="">Kontakt</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__contacts">
+                <a class="header__contact" href="mailto:info@devstudio.com">
+                    <svg width="26" height="16" viewBox="8 0 30 30">
+                        <use href="./images/icons.svg#icon-envelope-1"></use>
+                    </svg>info@devstudio.com</a>
+                <a class="header__contact" href="tel:+48111111111">
+                    <svg width="26" height="16" viewBox="8 0 30 30">
+                        <use href="./images/icons.svg#icon-smartphone-1"></use>
+                    </svg>+48 111 111 111</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="portfolio">
+            <div class="container">
+            <ul class="portfolio__filter">
+                <li class="portfolio__topic"><div class="portfolio__button">Wszystkie</div></li>
+                <li class="portfolio__topic"><div class="portfolio__button">Strony</div></li>
+                <li class="portfolio__topic"><div class="portfolio__button">Aplikacje</div></li>
+                <li class="portfolio__topic"><div class="portfolio__button">Dizajn</div></li>
+                <li class="portfolio__topic"><div class="portfolio__button">Marketing</div></li>
+            </ul>
+            <ul class="portfolio__items">
+                <li class="portfolio__item">
+                    <div class="portfolio__img">
+                    <img src="./images/technocrack.jpg" 
+                    alt="Technocrack" width="370" height="294" />
+                    <div class="portfolio__description">
+                        <p class="portfolio__text"></p>
+                    </div>
+                    </div>
+                    <div class="portfolio__info">
+                    <h5 class="portfolio__name">Technocrack</h5>
+                    <p class="portfolio__type">Strona internetowa</p>
+                    </div>
+                </li>
+                <li class="portfolio__item">
+                    <div class="portfolio__img">
+                    <img src="./images/neworlean.jpg" alt="Grafika New Orlean vs Golden Star" width="370" height="294" />
+                    <div class="portfolio__description">
+                        <p class="portfolio__text"></p>
+                    </div>
+                    </div>
+                    <div class="portfolio__info">
+                    <h5 class="portfolio__name">Grafika New Orlean vs Golden Star</h5>
+                    <p class="portfolio__type">Dizajn</p>
+                    </div>
+                </li>
+                <li class="portfolio__item">
+                    <div class="portfolio__img">
+                    <img src="./images/seafood.jpg" alt="Restauracja Seafood" width="370" height="294" />
+                    <div class="portfolio__description">
+                        <p class="portfolio__text"></p>
+                    </div>
+                    </div>
+                    <div class="portfolio__info">
+                    <h5 class="portfolio__name">Restauracja Seafood</h5>
+                    <p class="portfolio__type">Aplikacja</p>
+                    </div>
+                </li>
+                <li class="portfolio__item">
+                    <div class="portfolio__img">
+                    <img src="./images/prime.jpg" alt="Projekt Prime" width="370" height="294" />
+                    <div class="portfolio__description">
+                        <p class="portfolio__text"></p>
+                    </div>
+                    </div>
+                    <div class="portfolio__info">
+                    <h5 class="portfolio__name">Projekt Prime</h5>
+                    <p class="portfolio__type">Marketing</p>
+                    </div>
+                </li>
+                <li class="portfolio__item">
+                    <div class="portfolio__img">
+                    <img src="./images/boxes.jpg" alt="Projekt Boxes" width="370" height="294" />
+                    <div class="portfolio__description">
+                        <p class="portfolio__text"></p>
+                    </div>
+                    </div>
+                    <div class="portfolio__info">
+                    <h5 class="portfolio__name">Projekt Boxes</h5>
+                    <p class="portfolio__type">Aplikacja</p>
+                    </div>
+                </li>
+                <li class="portfolio__item">
+                    <div class="portfolio__img">
+                    <img src="./images/inspiration.jpg" alt="Inspiration has no Borders" width="370" height="294" />
+                    <div class="portfolio__description">
+                        <p class="portfolio__text"></p>
+                    </div>
+                    </div>
+                    <div class="portfolio__info">
+                    <h5 class="portfolio__name">Inspiration has no Borders</h5>
+                    <p class="portfolio__type">Strona internetowa</p>
+                    </div>
+                </li>
+                <li class="portfolio__item">
+                    <div class="portfolio__img">
+                    <img src="./images/mag.limited.jpg" alt="Magazyn Limited Edition" width="370" height="294" />
+                    <div class="portfolio__description">
+                        <p class="portfolio__text"></p>
+                    </div>
+                    </div>
+                    <div class="portfolio__info">
+                    <h5 class="portfolio__name">Magazyn Limited Edition</h5>
+                    <p class="portfolio__type">Dizajn</p>
+                    </div>
+                </li>
+                <li class="portfolio__item">
+                    <div class="portfolio__img">
+                    <img src="./images/lab.jpg" alt="Projekt LAB" width="370" height="294" />
+                    <div class="portfolio__description">
+                        <p class="portfolio__text"></p>
+                    </div>
+                    </div>
+                    <div class="portfolio__info">
+                    <h5 class="portfolio__name">Projekt LAB</h5>
+                    <p class="portfolio__type">Marketing</p>
+                    </div>
+                </li>
+                <li class="portfolio__item">
+                    <div class="portfolio__img">
+                    <img src="./images/growing.jpg" alt="Growing Business" width="370" height="294" />
+                    <div class="portfolio__description">
+                        <p class="portfolio__text"></p>
+                    </div>
+                    </div>
+                    <div class="portfolio__info">
+                    <h5 class="portfolio__name">Growing Business</h5>
+                    <p class="portfolio__type">Aplikacja</p>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__line">
+                <div>
+                    <a class="footer__logo" href="index.html"><span class="footer__web">Web</span>Studio</a>
+                    <ul class="footer__contact">
+                        <li class="footer__list">
+                            <address class="footer__address">
+                                m. Warszawa, Aleje Jerozolimskie 21
+                            </address>
+                        </li>
+                        <li class="footer__list"><a class="footer__link" href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="footer__list"><a class="footer__link" href="tel:+48111111111">+48 111 111 111</a></li>
+                    </ul>
+                </div>
+                <div class="footer__join">
+                    <h4>Dołącz do nas</h4>
+                    <ul class="socialmedia">
+                        <li class="socialmedia__type socialmedia__type--footer">
+                            <svg class="socialmedia__icon" viewBox="0 0 20 20">
+                                <use href="./images/icons.svg#icon-instagram-1"></use>
+                            </svg>
+                        </li>
+                        <li class="socialmedia__type socialmedia__type--footer">
+                            <svg class="socialmedia__icon" viewBox="0 0 20 20">
+                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                            </svg>
+                        </li>
+                        <li class="socialmedia__type socialmedia__type--footer">
+                            <svg class="socialmedia__icon" viewBox="0 0 20 20">
+                                <use href="./images/icons.svg#icon-facebook-1"></use>
+                            </svg>
+                        </li>
+                        <li class="socialmedia__type socialmedia__type--footer">
+                            <svg class="socialmedia__icon" viewBox="0 0 20 20">
+                                <use href="./images/icons.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__newsletter">
+                    <h4>Zapisz się do newslettera</h4>
+                    <form name="submit">
+                        <input class="footer__submit" type="email" name="newsletter-email" placeholder="E-mail" />
+                        <button class="footer__submitbtn" type="submit">
+                            Zapisz się
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <use href="./images/icons.svg#icon-send-1"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

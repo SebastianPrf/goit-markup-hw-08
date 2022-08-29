@@ -1,0 +1,24 @@
+.works {
+    &__info {
+        margin: -94px 0 50px;
+        line-height: 42px;
+    }
+    &__type {
+        position: relative;
+    }
+    &__label {
+        position: absolute;
+        margin-bottom: 0;
+        bottom: 0;
+        width: 370px;
+        padding-top: 27px;
+        padding-bottom: 27px;
+        background-color: rgba(47, 48, 58, 0.8);
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: $white;
+    }
+}

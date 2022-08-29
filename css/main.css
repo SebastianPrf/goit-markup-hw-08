@@ -1,0 +1,725 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", "Times New Roman", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  color: #212121;
+  line-height: 1.7;
+  list-style: none;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  display: block;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+a:hover {
+  color: #2196F3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h1 {
+  font-size: 44px;
+  text-transform: uppercase;
+  line-height: 1.4;
+  width: 696px;
+  height: 120px;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin: auto;
+}
+
+button {
+  display: block;
+}
+button:hover, button:focus {
+  color: #ffffff;
+  background-color: #2196F3;
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+li {
+  margin: 0 15px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  padding: 94px 0;
+}
+
+section ul {
+  display: flex;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 42px;
+  margin: 0 0 50px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: center;
+  margin: 30px 0 10px;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 30px 0 10px;
+  width: 270px;
+}
+
+p {
+  color: #757575;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  line-height: 19px;
+  margin: 0 0 16px;
+}
+
+.socialmedia {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 206px;
+  height: 44px;
+  margin-bottom: 30px;
+}
+.socialmedia__type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0px;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+}
+.socialmedia__type--footer {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: auto;
+}
+.socialmedia__type:hover {
+  background-color: #2196F3;
+  fill: #ffffff;
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socialmedia__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.header .container {
+  padding: 24px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+  max-height: 80px;
+}
+.header__logomenu {
+  display: flex;
+  align-items: center;
+}
+.header__logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.header__web {
+  color: #2196F3;
+}
+.header__menu {
+  width: 254px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0 93px;
+}
+.header__item {
+  margin: 0;
+  position: relative;
+}
+.header__active::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  bottom: -32px;
+  height: 4px;
+  border: 2px solid #2196F3;
+  border-radius: 2px;
+}
+.header__contacts {
+  display: flex;
+  margin-right: 27px;
+}
+.header__contact {
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  fill: #757575;
+}
+.header__contact:hover {
+  color: #2196F3;
+  fill: #2196F3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.promo {
+  display: block;
+  margin: auto;
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/promo.jpg");
+  background-size: cover;
+  padding: 200px 0;
+  max-width: 1600px;
+}
+.promo__button {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  width: 200px;
+  height: 50px;
+  border: none;
+  margin: 30px auto 0;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #2196F3;
+}
+
+.advantage__info {
+  display: none;
+}
+.advantage__text {
+  font-weight: 400;
+  color: #757575;
+  text-align: justify;
+  margin-top: 0;
+  margin-bottom: 3.62px;
+}
+.advantage__logo {
+  display: block;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+}
+
+.works__info {
+  margin: -94px 0 50px;
+  line-height: 42px;
+}
+.works__type {
+  position: relative;
+}
+.works__label {
+  position: absolute;
+  margin-bottom: 0;
+  bottom: 0;
+  width: 370px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.team {
+  background-color: #F5F4FA;
+}
+.team__worker {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.partners__partner {
+  width: 170px;
+  height: 76px;
+  border: 1px solid #afb1b8;
+  fill: #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.partners__partner:hover {
+  border-color: #2196F3;
+  fill: #2196F3;
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.partners__logobox {
+  width: 106px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: #2F303A;
+  padding: 60px 15px 60px;
+}
+.footer__link {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  line-height: 16px;
+  margin: 0;
+  line-height: 21px;
+}
+.footer__logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer__web {
+  color: #2196F3;
+}
+.footer__contact {
+  margin: 20px 0 0;
+}
+.footer__list {
+  margin: 0;
+  line-height: 21px;
+}
+.footer__list:nth-child(2) {
+  margin: 9px 0 9px;
+}
+.footer__address {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 9px;
+  line-height: 21px;
+}
+.footer__line {
+  display: flex;
+}
+.footer__join {
+  width: 206px;
+  color: #ffffff;
+  margin-left: 70px;
+}
+.footer__join h4 {
+  margin: 12px 0 20px;
+}
+.footer__newsletter {
+  width: 570px;
+  color: #ffffff;
+  margin-left: 78px;
+}
+.footer__newsletter h4 {
+  margin: 12px 0 20px;
+}
+.footer__newsletter form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__submit {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: transparent;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+}
+.footer__submitbtn {
+  padding: 10px 28px 10px 42px;
+  background-color: #2196F3;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  fill: #ffffff;
+  width: 200px;
+  height: 50px;
+  background: #2196F3;
+  border: 0px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.footer__submitbtn:hover, .footer__submitbtn:focus {
+  cursor: pointer;
+}
+
+.portfolio__filter {
+  justify-content: center;
+}
+.portfolio__topic {
+  margin: 0 4px 34px;
+}
+.portfolio__button {
+  font-size: 16px;
+  font-weight: 500;
+  height: 38px;
+  border: none;
+  margin: 0 auto 16px;
+  text-align: center;
+  padding: 6px 22px;
+  border-radius: 4px;
+  color: #212121;
+  background-color: #F5F4FA;
+}
+.portfolio__button:hover, .portfolio__button :focus {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #2196F3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio__items {
+  flex-wrap: wrap;
+}
+.portfolio__item {
+  display: block;
+  margin-bottom: 30px;
+  position: relative;
+}
+.portfolio__item:nth-last-child(-n+3) {
+  margin-bottom: 0px;
+}
+.portfolio__item:hover, .portfolio__item :focus {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio__item:hover .portfolio__description {
+  height: 294px;
+}
+.portfolio__description {
+  position: absolute;
+  bottom: 110px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+.portfolio .portfolio__text::before {
+  content: "Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji";
+}
+.portfolio__text {
+  display: block;
+  font-family: "Roboto";
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 49px;
+  margin-right: 45px;
+  margin-left: 24px;
+  color: #ffffff;
+}
+.portfolio__img {
+  overflow: hidden;
+}
+.portfolio__info {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 20px 24px;
+  margin: auto;
+}
+.portfolio__type {
+  text-align: left;
+  margin: 0;
+  line-height: 30px;
+}
+.portfolio__name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+  margin: 0 0 4px;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  width: 528px;
+  min-height: 581px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: block;
+}
+.box__x {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.box__x svg {
+  position: inherit;
+  top: 9px;
+  right: 9px;
+  margin: auto;
+}
+.box__x:hover, .box__x:focus {
+  cursor: pointer;
+  fill: #ffffff;
+}
+.box__text {
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+.box__register {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 448px;
+}
+.box__fill {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  position: relative;
+}
+.box__fill:focus-within input, .box__fill:focus-within textarea {
+  border-color: #2196F3;
+}
+.box__fill:focus-within svg {
+  fill: #2196F3;
+}
+.box__fillname, .box__filltel, .box__fillemail {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  color: #000000;
+  outline: none;
+  appearance: none;
+}
+.box__name, .box__tel, .box__email, .box__comment {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 4px;
+  margin-top: 10px;
+}
+.box__name {
+  margin-top: 0;
+}
+.box__textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.box__textarea {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #000000;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  outline: none;
+  appearance: none;
+  margin: 0;
+}
+.box__icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  display: block;
+  fill: #212121;
+  bottom: 11px;
+  left: 12px;
+}
+.box__icon--name {
+  padding: 3px 3px;
+}
+.box__icon--tel {
+  padding: 2.5px 2.5px;
+}
+.box__icon--email {
+  padding: 3px 1.5px;
+}
+.box__fieldset, .box__agreement {
+  border: none;
+  padding: 0;
+}
+.box__agreement {
+  width: 448px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.box__agree {
+  display: flex;
+  margin: 0 1px 0 7px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #757575;
+  letter-spacing: 0.03em;
+}
+.box__agreepoint {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+.box__policy, .box__reg {
+  text-decoration: underline;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  font-weight: 400;
+  color: #2196F3;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+.box__checkbox {
+  margin: 0;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  appearance: none;
+  outline: none;
+}
+.box__checkbox:focus, .box__checkbox:hover {
+  border-color: #2196F3;
+}
+.box__checkbox:checked {
+  border-color: #2196F3;
+  background-color: #2196F3;
+}
+.box__checkbox:checked + svg {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+.box__agreeicon {
+  width: 12px;
+  height: 12px;
+  fill: none;
+  /* stroke: #000; */
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 2px;
+}
+.box__submit {
+  align-self: center;
+  background-color: #2196F3;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  fill: #ffffff;
+  width: 200px;
+  height: 50px;
+  background: #2196F3;
+  border: 0px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}/*# sourceMappingURL=main.css.map */

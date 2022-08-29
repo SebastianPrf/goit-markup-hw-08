@@ -1,0 +1,19 @@
+.advantage {
+    &__info {
+        display: none;
+    }
+    &__text {
+        font-weight: 400;
+        color: #757575;
+        text-align: justify;
+        margin-top: 0;
+        margin-bottom: 3.62px;
+    }
+    &__logo {
+        display: block;
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        background-color: #F5F4FA;
+    }
+}
