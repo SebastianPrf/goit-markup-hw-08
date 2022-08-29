@@ -1,13 +1,24 @@
 .partners {
+    padding-bottom: 30px;
+    &__list {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     &__partner {
-    width: 170px;
-    height: 76px;
+    display: block;
+    width: 210px;
+    height: 92px;
     border: 1px solid $social_grey;
     fill: $social_grey;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
+    // &:nth-last-child(-n+2) {
+    //     margin-bottom: 0;
+    // }
     &:hover {
         border-color: $blue;
         fill: $blue;

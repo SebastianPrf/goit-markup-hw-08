@@ -1,4 +1,8 @@
 .works {
+    display: none;
+    @media screen and (min-width: 481px) {
+        display: block;
+    }
     &__info {
         margin: -94px 0 50px;
         line-height: 42px;

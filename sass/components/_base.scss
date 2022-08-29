@@ -15,12 +15,16 @@ img {
     display: block;
 }
 .container {
-    max-width: 1200px;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
 }
+@media screen and (min-width: 600px) {
+    .container {
+        max-width: 600px;
+    }
+}
 a {
-    display: block;
     font-weight: 500;
     line-height: 16px;
     letter-spacing: 0.02em;
@@ -34,11 +38,11 @@ a {
     }
 }
 h1 {
-    font-size: 44px;
+    font-size: 26px;
     text-transform: uppercase;
-    line-height: 1.4;
-    width: 696px;
-    height: 120px;
+    line-height: 42px;
+    max-width: 365px;
+    max-height: 84px;
     font-weight: 900;
     text-align: center;
     letter-spacing: 0.06em;
@@ -64,38 +68,37 @@ ul {
     margin: 0;
 }
 section {
-    padding: 94px 0;
+    padding: 60px 0;
 }
 section ul {
     display: flex;
 }
 h2 {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     text-align: center;
-    line-height: 42px;
-    margin: 0 0 50px;
+    line-height: 1.15em;
+    margin: 0 0 30px;
 }
 h3 {
     font-size: 16px;
     font-weight: 500;
-    line-height: 19px;
+    line-height: 1.15em;
     text-align: center;
     margin: 30px 0 10px;
 }
 h4 {
     text-transform: uppercase;
     font-weight: 700;
-    line-height: 16px;
-    margin: 30px 0 10px;
-    width: 270px;
+    line-height: 1.15em;
 }
 p {
     color: $lightgrey;
     text-decoration: none;
     text-align: center;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 19px;
+    line-height: 1.15em;
     margin: 0 0 16px;
 }
 .socialmedia {
@@ -104,7 +107,6 @@ p {
     margin: auto;
     width: 206px;
     height: 44px;
-    margin-bottom: 30px;
     &__type {
         display: flex;
         align-items: center;
