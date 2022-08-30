@@ -17,12 +17,14 @@
         text-decoration: none;
         letter-spacing: 0.03em;
         color: $white;
+        display: block;
     }
     &__web {
         color: $blue;
     }
     &__contact {
         margin: 20px 0 0;
+        
     }
     &__contact-us {
         margin-bottom: 60px;

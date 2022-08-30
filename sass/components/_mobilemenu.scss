@@ -73,6 +73,7 @@
     &__socialmedias {
         display: flex;
         margin: 0;
+        flex-wrap: wrap;
     }
     &__socialmedia {
             color: $blue;
@@ -83,6 +84,9 @@
             font-size: 18px;
             &:first-child {
                 padding-left: 0;
+            }
+            &:last-child {
+                border: none;
             }
     }
 }

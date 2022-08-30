@@ -1,9 +1,12 @@
 .portfolio {
     &__filter {
-        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 34px;
     }
     &__topic {
-        margin: 0 4px 34px;
+        margin: 0 4px;
     }
     &__button {
         font-size: 16px;
@@ -12,7 +15,7 @@
         border: none;
         margin: 0 auto 16px;
         text-align: center;
-        padding: 6px 22px;
+        padding: 6px 13px;
         border-radius: 4px;
         color: $grey;
         background-color: $softgrey;
