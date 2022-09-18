@@ -32,17 +32,12 @@ img {
   margin-right: auto;
 }
 
-@media screen and (min-width: 481px) and (max-width: 767px) {
-  .container {
-    max-width: 767px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .container {
     max-width: 1200px;
   }
@@ -265,6 +260,11 @@ p {
   padding: 118px 0;
   max-height: 400px;
   max-width: 480px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .promo {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/promo_mobile_x2.jpg");
+  }
 }
 .promo .container {
   justify-self: center;
@@ -671,7 +671,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   margin-top: 40px;
   margin-bottom: 12px;
 }
@@ -693,6 +693,9 @@ p {
 }
 .box__fill:focus-within svg {
   fill: #2196F3;
+}
+.box__fill:focus-within span {
+  color: #2196F3;
 }
 .box__fillname, .box__filltel, .box__fillemail {
   width: 370px;
@@ -767,9 +770,10 @@ p {
   margin-bottom: 30px;
 }
 .box__agree {
-  display: flex;
+  display: flow-root;
   margin: 0 1px 0 7px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: 14px;
   font-weight: 400;
   color: #757575;
   letter-spacing: 0.03em;
@@ -785,13 +789,11 @@ p {
 }
 .box__policy, .box__reg {
   text-decoration: underline;
-  font-size: 14px;
+  font-size: 12px;
   letter-spacing: 0.03em;
-  line-height: 24px;
+  line-height: 14px;
   font-weight: 400;
   color: #2196F3;
-  margin-left: 0.25em;
-  margin-right: 0.25em;
 }
 .box__checkbox {
   margin: 0;
@@ -916,10 +918,12 @@ p {
 }
 .menu-container__tel {
   font-size: 34px;
+  color: #2196F3;
 }
 .menu-container__socialmedias {
   display: flex;
   margin: 0;
+  margin-top: 32px;
   flex-wrap: wrap;
 }
 .menu-container__socialmedia {
@@ -935,6 +939,9 @@ p {
 }
 .menu-container__socialmedia:last-child {
   border: none;
+}
+.menu-container__socialmedia:hover, .menu-container__socialmedia:focus {
+  cursor: pointer;
 }
 
 .menu-container.is-open {

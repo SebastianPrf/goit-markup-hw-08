@@ -69,10 +69,12 @@
     }
     &__tel {
         font-size: 34px;
+        color: $blue;
     }
     &__socialmedias {
         display: flex;
         margin: 0;
+        margin-top: 32px;
         flex-wrap: wrap;
     }
     &__socialmedia {
@@ -87,6 +89,10 @@
             }
             &:last-child {
                 border: none;
+            }
+            &:hover,
+            &:focus {
+                cursor: pointer;
             }
     }
 }
