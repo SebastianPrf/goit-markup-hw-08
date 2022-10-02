@@ -26,4 +26,31 @@
             margin-bottom: 0;
         }
     }
-}
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        padding-bottom: 45px;
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            
+        }
+        &__list-point {
+            max-width: 354px;
+            margin: 0;
+            flex-basis: calc( (100% - 60px) / 2);
+        }
+        &__list-point:nth-child(-n+2) {
+            margin-bottom: 10px;
+        }
+        &__title {
+            text-align: start;
+            margin: 30px 0 10px;
+        }
+        &__text {
+            text-align: start;
+            height: 65px;
+            margin: 0;
+        }
+    }
+}   

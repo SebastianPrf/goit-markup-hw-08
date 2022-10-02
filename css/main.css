@@ -23,11 +23,11 @@ body {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 .container {
   max-width: 480px;
+  min-width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -101,14 +101,14 @@ h2 {
   font-size: 28px;
   font-weight: 700;
   text-align: center;
-  line-height: 1.15em;
+  line-height: 1.172em;
   margin: 0 0 30px;
 }
 
 h3 {
   font-size: 16px;
   font-weight: 500;
-  line-height: 1.15em;
+  line-height: 1.172em;
   text-align: center;
   margin: 30px 0 10px;
 }
@@ -116,7 +116,7 @@ h3 {
 h4 {
   text-transform: uppercase;
   font-weight: 700;
-  line-height: 1.15em;
+  line-height: 1.172em;
 }
 
 p {
@@ -125,7 +125,7 @@ p {
   text-align: center;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.15em;
+  line-height: 1.172em;
   margin: 0 0 16px;
 }
 
@@ -167,7 +167,7 @@ p {
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 1;
 }
 .header .container {
   padding: 16px 15px;
@@ -176,10 +176,13 @@ p {
   justify-content: space-between;
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
-  max-height: 60px;
+  height: 80px;
+  width: 100%;
+}
+.header__menu-toggle {
+  display: none;
 }
 .header__logomenu {
-  display: flex;
   align-items: center;
 }
 .header__logo {
@@ -195,13 +198,15 @@ p {
   color: #2196F3;
 }
 .header__menu {
-  width: 254px;
+  margin-left: 15px;
+  margin-right: 15px;
+  max-width: 282px;
   display: flex;
   justify-content: space-between;
-  margin: 0 0 0 93px;
+  flex-basis: 100%;
 }
 .header__item {
-  margin: 0;
+  margin: 0 5px;
   position: relative;
 }
 .header__active::after {
@@ -210,17 +215,18 @@ p {
   position: absolute;
   width: 100%;
   margin: 0;
-  bottom: -32px;
+  bottom: -29px;
+  left: 0;
   height: 4px;
   border: 2px solid #2196F3;
   border-radius: 2px;
 }
 .header__contacts {
   display: flex;
-  margin-right: 27px;
+  flex-wrap: wrap;
 }
 .header__contact {
-  margin-left: 50px;
+  margin: 5px 0;
   display: flex;
   align-items: center;
   fill: #757575;
@@ -231,14 +237,20 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .header__menu, .header__contacts {
     display: none;
   }
-}
-@media (min-width: 769px) {
+  .header .container {
+    max-height: 60px;
+  }
   .header__menu-toggle {
-    display: none;
+    display: contents;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 787px) {
+  .header__contacts {
+    flex-basis: 0;
   }
 }
 .header__menu-toggle {
@@ -255,7 +267,7 @@ p {
 .promo {
   display: block;
   margin: auto;
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/promo_mobile.jpg");
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/promo/promo_mobile.jpg");
   background-size: cover;
   padding: 118px 0;
   max-height: 400px;
@@ -263,7 +275,7 @@ p {
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .promo {
-    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/promo_mobile_x2.jpg");
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/promo/promo_mobile_x2.jpg");
   }
 }
 .promo .container {
@@ -285,9 +297,15 @@ p {
   background-color: #2196F3;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .promo {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/promo/promo_tablet.jpg");
     max-width: 768px;
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .promo {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/promo/promo_tablet_x2.jpg");
   }
 }
 .advantage__info {
@@ -317,11 +335,39 @@ p {
 .advantage__text:last-child {
   margin-bottom: 0;
 }
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .advantage {
+    padding-bottom: 45px;
+  }
+  .advantage__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .advantage__list-point {
+    max-width: 354px;
+    margin: 0;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  .advantage__list-point:nth-child(-n+2) {
+    margin-bottom: 10px;
+  }
+  .advantage__title {
+    text-align: start;
+    margin: 30px 0 10px;
+  }
+  .advantage__text {
+    text-align: start;
+    height: 65px;
+    margin: 0;
+  }
+}
 
 .works {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .works {
     display: block;
   }
@@ -362,8 +408,28 @@ p {
   padding-bottom: 24px;
   margin-bottom: 30px;
 }
-.team__worker:last-child {
-  margin-bottom: 0;
+@media screen and (max-width: 480px) {
+  .team__worker:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .team__workers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .team__worker {
+    width: 100%;
+    max-width: 354px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  .team__worker img {
+    max-height: 374px;
+  }
+  .team__worker:nth-last-child(-n+2) {
+    margin-bottom: 0px;
+  }
 }
 
 .partners {
@@ -399,6 +465,13 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .partners__partner {
+    width: 100%;
+    max-width: 226px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .footer {
@@ -513,6 +586,36 @@ p {
 .footer .socialmedia {
   margin-top: 20px;
   margin-bottom: 60px;
+  fill: #ffffff;
+}
+.footer .socialmedia__type {
+  fill: #ffffff;
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .footer__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer__contact-us {
+    width: 100%;
+    max-width: 253px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__join {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__newsletter {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 450px;
+  }
+  .footer__newsletter h4 {
+    margin-bottom: 20px;
+  }
 }
 
 .portfolio__filter {
@@ -561,6 +664,7 @@ p {
   padding: 6px 27px;
 }
 .portfolio__items {
+  display: flex;
   flex-wrap: wrap;
 }
 .portfolio__item {
@@ -568,9 +672,8 @@ p {
   width: 100%;
   max-height: 404px;
   margin-bottom: 30px;
-  position: relative;
 }
-.portfolio__item:nth-last-child(-n+3) {
+.portfolio__item:nth-last-child(-n) {
   margin-bottom: 0px;
 }
 .portfolio__item:hover, .portfolio__item :focus {
@@ -584,12 +687,13 @@ p {
 }
 .portfolio__description {
   position: absolute;
-  bottom: 110px;
+  bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
   height: 0;
-  max-height: 294px;
+  display: flex;
+  align-items: center;
   background-color: rgba(33, 150, 243, 0.9);
   transition: height 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
@@ -604,12 +708,13 @@ p {
   font-style: normal;
   font-size: 18px;
   line-height: 28px;
-  margin: 77px 24px;
+  margin-left: 24px;
+  margin-right: 24px;
   color: #ffffff;
 }
 .portfolio__img {
-  display: flex;
-  align-items: center;
+  position: relative;
+  display: block;
   max-height: 294px;
   overflow: hidden;
 }
@@ -632,6 +737,14 @@ p {
   letter-spacing: 0.06em;
   color: #212121;
   margin: 0 0 4px;
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .portfolio__item {
+    height: auto;
+    max-height: 440px;
+    max-width: 354px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
 }
 
 .box {
@@ -841,6 +954,15 @@ p {
   border: 0px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .is-hidden {

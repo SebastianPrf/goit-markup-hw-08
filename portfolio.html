@@ -16,19 +16,15 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__logomenu">
-                <a class="header__logo" href="index.html"><span class="header__web">Web</span>Studio</a>
-                <nav>
-                    <ul class="header__menu">
-                        <li class="header__item"><a href="index.html">Agencja </a>
-                        </li>
-                        <li class="header__item header__active"><a href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="header__item"><a href="">Kontakt</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            <a class="header__logo" href="index.html"><span class="header__web">Web</span>Studio</a>
+            <ul class="header__menu">
+                <li class="header__item"><a href="index.html">Agencja </a>
+                </li>
+                <li class="header__item header__active"><a href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="header__item"><a href="">Kontakt</a>
+                </li>
+            </ul>
             <div class="header__contacts">
                 <a class="header__contact" href="mailto:info@devstudio.com">
                     <svg width="26" height="16" viewBox="8 0 30 30">
@@ -39,12 +35,12 @@
                         <use href="./images/icons.svg#icon-smartphone-1"></use>
                     </svg>+48 111 111 111</a>
             </div>
+    
             <button class="header__menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg width="24" height="16" viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg">
                     <use href="./images/icons.svg#mobil-menu"></use>
                 </svg>
             </button>
-            </div>
         </div>
     </header>
     <main>
@@ -60,11 +56,16 @@
             <ul class="portfolio__items">
                 <li class="portfolio__item">
                     <div class="portfolio__img">
-                        <img src="./images/technocrack.jpg" 
-                        alt="Technocrack"/>
-                    </div>
-                    <div class="portfolio__description">
-                        <p class="portfolio__text"></p>
+                        <img 
+                        alt="Technocrack" 
+                        src="./images/technocrack/technocrack450.jpg" 
+                        srcset="
+                        ./images/technocrack/technocrack450.jpg 1x,
+                        ./images/technocrack/technocrack900.jpg 2x
+                        " />
+                        <div class="portfolio__description">
+                            <p class="portfolio__text"></p>
+                        </div>
                     </div>
                     <div class="portfolio__info">
                         <h5 class="portfolio__name">Technocrack</h5>
@@ -75,9 +76,9 @@
                     <div class="portfolio__img">
                         <img src="./images/neworlean.jpg" 
                         alt="Grafika New Orlean vs Golden Star"/>
-                    </div>
-                    <div class="portfolio__description">
-                        <p class="portfolio__text"></p>
+                        <div class="portfolio__description">
+                            <p class="portfolio__text"></p>
+                        </div>
                     </div>
                     <div class="portfolio__info">
                         <h5 class="portfolio__name">Grafika New Orlean vs Golden Star</h5>
@@ -88,9 +89,9 @@
                     <div class="portfolio__img">
                         <img src="./images/seafood.jpg"
                         alt="Restauracja Seafood"/>
-                    </div>
-                    <div class="portfolio__description">
-                        <p class="portfolio__text"></p>
+                        <div class="portfolio__description">
+                            <p class="portfolio__text"></p>
+                        </div>
                     </div>
                     <div class="portfolio__info">
                     <h5 class="portfolio__name">Restauracja Seafood</h5>
@@ -101,10 +102,11 @@
                     <div class="portfolio__img">
                         <img src="./images/prime.jpg" 
                         alt="Projekt Prime"/>
+                        <div class="portfolio__description">
+                            <p class="portfolio__text"></p>
+                        </div>
                     </div>
-                    <div class="portfolio__description">
-                        <p class="portfolio__text"></p>
-                    </div>
+                    
                     <div class="portfolio__info">
                     <h5 class="portfolio__name">Projekt Prime</h5>
                     <p class="portfolio__type">Marketing</p>
@@ -114,10 +116,11 @@
                     <div class="portfolio__img">
                         <img src="./images/boxes.jpg"
                         alt="Projekt Boxes"/>
+                        <div class="portfolio__description">
+                            <p class="portfolio__text"></p>
+                        </div>
                     </div>
-                    <div class="portfolio__description">
-                        <p class="portfolio__text"></p>
-                    </div>
+                    
                     <div class="portfolio__info">
                     <h5 class="portfolio__name">Projekt Boxes</h5>
                     <p class="portfolio__type">Aplikacja</p>
@@ -127,10 +130,11 @@
                     <div class="portfolio__img">
                         <img src="./images/inspiration.jpg"
                         alt="Inspiration has no Borders"/>
+                        <div class="portfolio__description">
+                            <p class="portfolio__text"></p>
+                        </div>
                     </div>
-                    <div class="portfolio__description">
-                        <p class="portfolio__text"></p>
-                    </div>
+                    
                     <div class="portfolio__info">
                     <h5 class="portfolio__name">Inspiration has no Borders</h5>
                     <p class="portfolio__type">Strona internetowa</p>
@@ -140,10 +144,11 @@
                     <div class="portfolio__img">
                         <img src="./images/mag.limited.jpg"
                         alt="Magazyn Limited Edition"/>
+                        <div class="portfolio__description">
+                            <p class="portfolio__text"></p>
+                        </div>
                     </div>
-                    <div class="portfolio__description">
-                        <p class="portfolio__text"></p>
-                    </div>
+                    
                     <div class="portfolio__info">
                     <h5 class="portfolio__name">Magazyn Limited Edition</h5>
                     <p class="portfolio__type">Dizajn</p>
@@ -153,10 +158,11 @@
                     <div class="portfolio__img">
                         <img src="./images/lab.jpg"
                         alt="Projekt LAB"/>
+                        <div class="portfolio__description">
+                            <p class="portfolio__text"></p>
+                        </div>
                     </div>
-                    <div class="portfolio__description">
-                        <p class="portfolio__text"></p>
-                    </div>
+                    
                     <div class="portfolio__info">
                     <h5 class="portfolio__name">Projekt LAB</h5>
                     <p class="portfolio__type">Marketing</p>
@@ -166,10 +172,11 @@
                     <div class="portfolio__img">
                         <img src="./images/growing.jpg"
                         alt="Growing Business"/>
+                        <div class="portfolio__description">
+                            <p class="portfolio__text"></p>
+                        </div>
                     </div>
-                    <div class="portfolio__description">
-                        <p class="portfolio__text"></p>
-                    </div>
+                    
                     <div class="portfolio__info">
                     <h5 class="portfolio__name">Growing Business</h5>
                     <p class="portfolio__type">Aplikacja</p>

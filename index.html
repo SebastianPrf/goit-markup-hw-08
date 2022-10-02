@@ -16,9 +16,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__logomenu">
-                <a class="header__logo" href="index.html"><span class="header__web">Web</span>Studio</a>
-                <nav>
+            <a class="header__logo" href="index.html"><span class="header__web">Web</span>Studio</a>
                     <ul class="header__menu">
                         <li class="header__item header__active"><a href="index.html">Agencja </a>    
                         </li>
@@ -27,8 +25,6 @@
                         <li class="header__item"><a href="">Kontakt</a>
                         </li>
                     </ul>
-                </nav>
-            </div>
             <div class="header__contacts">
                 <a class="header__contact" href="mailto:info@devstudio.com">
                     <svg width="26" height="16" viewBox="8 0 30 30">
@@ -117,8 +113,15 @@
             <h2 class="team__info">Nasz zespół</h2>
             <ul class="team__workers">
                 <li class="team__worker">
-                    <img src="./images/productdes-1.jpg" 
-                    alt="John Doe"/>
+                    <img
+                        alt="John Doe"
+                        src="./images/productdes/productdes450.jpg"
+                        srcset="
+                        ./images/productdes/productdes450.jpg 1x,
+                        ./images/productdes/productdes900.jpg 2x
+                        "
+                        sizes="100vw"
+                    />
                     <h3>John Doe</h3>
                     <p>Product Designer</p>
                     <div class="socialmedia">
@@ -147,8 +150,13 @@
                     </div>
                 </li>
                 <li class="team__worker">
-                    <img src="./images/frontdev-1.jpg" 
-                    alt="John Doe"/>
+                    <img 
+                    alt="John Doe" 
+                    src="./images/frontdev/frontdev450.jpg" 
+                    srcset="
+                        ./images/frontdev/frontdev450.jpg 1x,
+                        ./images/frontdev/frontdev900.jpg 2x
+                    " sizes="100vw" />
                     <h3>John Doe</h3>
                     <p>Frontend Developer</p>
                     <div class="socialmedia">
@@ -177,8 +185,14 @@
                     </div>
                 </li>
                 <li class="team__worker">
-                    <img src="./images/marketing-1.jpg" 
-                    alt="John Doe"/>
+                    <img 
+                    alt="John Doe" 
+                    src="./images/marketing/marketing450.jpg" 
+                    srcset="
+                        ./images/marketing/marketing450.jpg 1x,
+                        ./images/marketing/marketing900.jpg 2x
+                    " 
+                    sizes="100vw" />
                     <h3>John Doe</h3>
                     <p>Marketing</p>
                     <div class="socialmedia">
@@ -207,8 +221,14 @@
                     </div>
                 </li>
                 <li class="team__worker">
-                    <img src="./images/uidesign-1.jpg" 
-                    alt="John Doe"/>
+                    <img 
+                    alt="John Doe" 
+                    src="./images/uidesign/uidesign450.jpg" 
+                    srcset="
+                        ./images/uidesign/uidesign450.jpg 1x,
+                        ./images/uidesign/uidesign900.jpg 2x
+                    " 
+                    sizes="100vw" />
                     <h3>John Doe</h3>
                     <p>UI Designer</p>
                     <div class="socialmedia">

@@ -110,5 +110,37 @@
     .socialmedia {
         margin-top: 20px;
         margin-bottom: 60px;
+        fill: $white;
+        &__type {
+            fill: $white;   
+        }
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+        &__line {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__contact-us {
+            width: 100%;
+            max-width: 253px;
+            // margin-left: 61px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__join {
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+        &__newsletter {
+            margin-left: auto;
+            margin-right: auto;
+            & h4 {
+                margin-bottom: 20px;
+            }
+            width: 100%;
+            max-width: 450px;
+        }
     }
 }
