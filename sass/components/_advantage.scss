@@ -33,7 +33,7 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
-            
+            padding: 0 calc((100% - (330px *2)) / 2);
         }
         &__list-point {
             max-width: 354px;

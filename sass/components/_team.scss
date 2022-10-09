@@ -3,7 +3,7 @@
     &__workers {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
     }
     &__worker {
         background: $white;
@@ -21,10 +21,11 @@
             }
         }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
+        &__workers {
+            padding: 0 calc((100% - (395px *2)) / 2);
+        }
         &__worker {
-            width: 100%;
             max-width: 354px;
-            flex-basis: calc((100% - 60px) / 2);
             & img {
                 max-height: 374px;
             }

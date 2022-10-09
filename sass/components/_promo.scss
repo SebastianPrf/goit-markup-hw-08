@@ -51,6 +51,11 @@
         max-width: 767px;
     }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .promo {
+        max-width: 1199px;
+    }
+}
 @media screen and (min-width: 1200px) {
     .promo {
         max-height: 600px;
