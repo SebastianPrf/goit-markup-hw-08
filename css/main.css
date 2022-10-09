@@ -33,16 +33,6 @@ img {
   margin-right: auto;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 769px) {
-  .container {
-    max-width: 1200px;
-  }
-}
 a {
   font-weight: 500;
   line-height: 16px;
@@ -164,11 +154,29 @@ p {
   height: 20px;
 }
 
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .container {
+    max-width: 767px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 1199px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1600px;
+  }
+  section {
+    padding: 94px 0;
+  }
+}
 .header {
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 150;
 }
 .header .container {
   padding: 16px 15px;
@@ -238,7 +246,7 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .header__menu, .header__contacts {
     display: none;
   }
@@ -249,7 +257,7 @@ p {
     display: contents;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 787px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__contacts {
     flex-basis: 0;
   }
@@ -264,12 +272,24 @@ p {
   background-color: transparent;
   fill: #2196F3;
 }
+@media screen and (min-width: 1200px) {
+  .header .container {
+    justify-content: space-around;
+  }
+  .header__logo {
+    font-size: 26px;
+  }
+  .header__contact {
+    margin-right: 30px;
+  }
+}
 
 .promo {
   display: block;
   margin: auto;
   background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/promo/promo_mobile.jpg");
   background-size: cover;
+  background-position: center;
   padding: 118px 0;
   max-height: 400px;
   max-width: 480px;
@@ -301,12 +321,33 @@ p {
 @media screen and (min-width: 481px) {
   .promo {
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/promo/promo_tablet.jpg");
-    max-width: 768px;
+    max-width: 767px;
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .promo {
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/promo/promo_tablet_x2.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .promo {
+    max-height: 600px;
+    max-width: 1600px;
+    padding: 200px 0;
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/promo/promo_tablet.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .promo {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/promo/promo_tablet_x2.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .promo__text {
+    font-size: 44px;
+    max-width: 696px;
+    max-height: 120px;
+    line-height: 60px;
   }
 }
 .advantage__info {
@@ -336,7 +377,7 @@ p {
 .advantage__text:last-child {
   margin-bottom: 0;
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantage {
     padding-bottom: 45px;
   }
@@ -364,14 +405,20 @@ p {
     margin: 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .advantage {
+    padding: 94px 0;
+  }
+  .advantage__list {
+    display: flex;
+  }
+  .advantage__list-point {
+    flex-basis: calc((100% - 60px) / 4);
+  }
+}
 
 .works {
   display: none;
-}
-@media screen and (min-width: 769px) {
-  .works {
-    display: block;
-  }
 }
 .works__info {
   margin: -94px 0 50px;
@@ -395,31 +442,40 @@ p {
   text-transform: uppercase;
   color: #ffffff;
 }
+@media screen and (min-width: 1200px) {
+  .works {
+    display: block;
+    padding-top: 0;
+  }
+  .works__info {
+    margin-top: 0;
+  }
+}
 
 .team {
   background-color: #F5F4FA;
 }
 .team__workers {
-  display: inline;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .team__worker {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   padding-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
+  max-width: 450px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .team__worker:last-child {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .team__workers {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__worker {
     width: 100%;
     max-width: 354px;
@@ -430,6 +486,22 @@ p {
   }
   .team__worker:nth-last-child(-n+2) {
     margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__info {
+    margin-bottom: 50px;
+  }
+  .team__worker {
+    max-height: 428px;
+    max-width: 270px;
+    margin-bottom: 0;
+    padding-bottom: 42px;
+    flex-basis: calc((100% - 60px) / 4);
+  }
+  .team__photo {
+    width: 100%;
+    max-height: 260px;
   }
 }
 
@@ -443,7 +515,7 @@ p {
 }
 .partners__partner {
   display: block;
-  width: 210px;
+  min-width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   fill: #afb1b8;
@@ -467,11 +539,20 @@ p {
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .partners__partner {
     width: 100%;
     max-width: 226px;
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .partners {
+    padding-bottom: 64px;
+  }
+  .partners__partner {
+    min-width: 120px;
+    width: 170px;
   }
 }
 
@@ -666,18 +747,20 @@ p {
 }
 .portfolio__items {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  flex-direction: inherit;
-  justify-content: stretch;
+  align-items: stretch;
 }
 .portfolio__item {
-  display: block;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 30px);
   height: 100%;
   max-height: 404px;
+  max-width: 450px;
   margin-bottom: 30px;
 }
-.portfolio__item:nth-last-child(-n) {
+.portfolio__item:nth-last-child(-n+2) {
   margin-bottom: 0px;
 }
 .portfolio__item:hover, .portfolio__item :focus {
@@ -726,7 +809,8 @@ p {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   padding: 20px 24px;
-  margin: auto;
+  width: 100%;
+  height: 100%;
 }
 .portfolio__type {
   text-align: left;
@@ -745,13 +829,32 @@ p {
   width: 450px;
   height: 294px;
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+.portfolio__item-filler {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__filter {
     justify-content: center;
+    margin: 0;
+    padding-bottom: 15px;
+  }
+  .portfolio__items {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 768px;
+    gap: 30px;
   }
   .portfolio__item {
+    margin-bottom: 0;
     max-height: 440px;
+    max-width: 354px;
     flex-basis: calc((100% - 60px) / 2);
+  }
+  .portfolio__item:first-of-type .portfolio__info {
+    padding-bottom: 60px;
+  }
+  .portfolio__item-filler {
+    display: block;
   }
   .portfolio__image {
     width: 354px;
@@ -762,6 +865,7 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
+  z-index: 500;
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   width: 450px;
@@ -974,6 +1078,7 @@ p {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
+  z-index: 200;
 }
 
 .is-hidden {

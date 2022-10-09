@@ -2,7 +2,7 @@
     position: sticky;
     top: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 150;
     .container {
         padding: 16px 15px;
         display: flex;
@@ -71,7 +71,7 @@
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
     }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
         &__menu,
         &__contacts {
                 display: none;
@@ -83,7 +83,7 @@
             display: contents;
         }
     }
-    @media screen and (min-width: 481px) and (max-width: 787px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         &__contacts {
             flex-basis: 0;
         }
@@ -96,6 +96,17 @@
         &:hover {
             background-color: transparent;
             fill: $blue;
+        }
+    }
+    @media screen and (min-width: 1200px) {
+        .container {
+            justify-content: space-around;
+        }
+        &__logo {
+            font-size: 26px;
+        }
+        &__contact {
+            margin-right: 30px;
         }
     }
 }

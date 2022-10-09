@@ -17,6 +17,8 @@ body {
 }
 img {
     display: block;
+    // width: 100%;
+    // height: 100%;
     max-width: 100%;
     object-fit: cover;
 }
@@ -26,16 +28,7 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .container {
-        max-width: 768px;
-    }
-}
-@media screen and (min-width: 769px) {
-    .container {
-        max-width: 1200px;
-    }
-}
+
 a {
     font-weight: 500;
     line-height: 16px;
@@ -144,5 +137,25 @@ p {
     &__icon {
         width: 20px;
         height: 20px;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .container {
+        max-width: 767px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        max-width: 1199px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1600px;
+    }
+
+    section {
+        padding: 94px 0;
     }
 }
