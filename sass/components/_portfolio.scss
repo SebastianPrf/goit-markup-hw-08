@@ -164,5 +164,18 @@
             width: 354px;
         }
     }
+    @media screen and (min-width: 1200px) {
+        &__filter {
+                justify-content: center;
+                margin: 0;
+                padding-bottom: 35px;
+            }
+        &__items {
+            gap: 30px;
+        }
+        &__item {
+            margin: 0;
+        }
+    }
 }
 
