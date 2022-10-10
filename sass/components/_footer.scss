@@ -60,6 +60,10 @@
         color: $white;
         text-align: center;
     }
+    &__submit-menu {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     &__submit {
         font-family: 'Roboto';
         font-style: normal;
