@@ -220,6 +220,21 @@
         border-radius: 4px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
+    @media screen and (min-width: 1200px) {
+        max-width: 528px;
+        max-height: 581px;
+        &__text {
+            max-width: none;
+        }
+        &__fill {
+            padding: 0 38px;
+        }
+        &__agree,
+        &__reg,
+        &__policy {
+            font-size: 14px;
+        }
+    }
 }
 .backdrop {
     position: fixed;
